@@ -135,7 +135,7 @@
 &kp DELETE        &kp RIGHT_GUI  &kp LEFT_ALT  &kp RCTRL  &lt 3 TAB  &lt 1 ESCAPE  &kp SPACE  &kp BACKSPACE                                  &lt 2 BACKSLASH
             >;
 
-            sensor-bindings = <&scroll_move_y>;
+            sensor-bindings = <&scroll_move_x>, <&scroll_move_x>;
         };
 
         MOUSE {
@@ -146,15 +146,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&scroll_up_down>, <&scroll_up_down>;
         };
 
         FUNCTION {
             bindings = <
-&kp F1        &kp F2        &kp F3        &kp F4      &kp F5                  &kp F6          &kp F7         &kp F8     &kp F9         &kp F10
-&trans        &trans        &kp LANG1     &kp LANG1   &trans  &trans  &trans  &trans          &kp LS(LANG2)  &kp LANG2  &kp PAGE_UP    &trans
-&trans        &trans        &trans        &trans      &trans  &trans  &trans  &trans          &trans         &kp HOME   &kp PAGE_DOWN  &kp END
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &trans  &trans  &trans  &bt BT_CLR_ALL                                           &kp LEFT_SHIFT
+&kp F1        &kp F2        &kp F3        &kp F4      &kp F5                  &kp F6          &kp F7     &kp F8     &kp F9         &kp F10
+&trans        &trans        &kp LANG1     &kp LANG1   &trans  &trans  &trans  &trans          &kp LANG2  &kp LANG2  &kp PAGE_UP    &trans
+&trans        &trans        &trans        &trans      &trans  &trans  &trans  &trans          &trans     &kp HOME   &kp PAGE_DOWN  &kp END
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &trans  &trans  &trans  &bt BT_CLR_ALL                                       &kp LEFT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
